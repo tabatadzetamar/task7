@@ -1,0 +1,139 @@
+:root {
+    --logo-sm: 64px;
+    --logo-lg:128px;
+    --main-silver: rgba(192, 180, 180, 1);
+    --header-p-sm-fs: 2.4rem;
+    --header-p-md-fs: 3.2rem;
+    --header-p-lg-fs: 4rem;
+    --breakpoint-md: 834px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1440px;
+    --main-brown: #2A2626;
+    --section-title-sm: 3.6rem;
+    --section-title-md: 4.8rem;
+}
+
+body {
+    background-color: #0B0A0A;
+}
+
+@font-face {
+    font-family: Gentium Book Basic;
+    src: url(../webfonts/GenBkBasR.ttf);
+}
+
+/* header */
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 696px;
+    background-image: url(../assets/images/header-bg-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-wrapper .paragraph {
+    text-align: center;
+    max-width: 420px;
+    color: var(--main-silver);
+    font-family: Gentium Book Basic;
+    font-size: var(--header-p-sm-fs);
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+
+.logo {
+    font-size: var(--logo-sm);
+    color: white;
+    font-family: 'Miltonian Tattoo', cursive;
+}
+nav {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+    padding: 0 3em;
+}
+
+/* articles */
+
+.articles {
+    background-color: var(--main-brown);
+}
+
+
+.section-title {
+    color: white;
+    font-size: var(--section-title-sm);
+    font-family: Gentium Book Basic;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.articles .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles .container img {
+    margin: 1.2em 0;
+}
+
+/* about */
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+.about .container .text {
+    background-color: var(--main-silver);
+    height: 280px;
+    
+}
+.about .container .text, .img {
+    margin: 1.2em 0;
+}
+.about .container .text p {
+    color: white;
+    max-width: 300px;
+    font-size: 1.6rem;
+    font-family: Gentium Book Basic;
+    text-align: justify;
+    margin: auto;
+    padding-top: 6.4rem;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-brown);
+}
+
+footer .logo {
+    display: none;
+    
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 36px;
+}
+
+footer .social-icons-2 {
+    display: none;
+}
+
+section {
+    padding: 4.8em 3em;
+}
